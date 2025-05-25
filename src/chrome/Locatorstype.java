@@ -39,6 +39,23 @@ public class Locatorstype {
 		}
 		// Xpath
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Prmu");
+		/*//xpath using start with
+		 * driver.findElement(By.xpath("//input[starts-with(@id,"pas")]")).sendKeys("Prmu");
+		 * xpath using contains
+		 * driver.findElement(By.xpath("//input[contains(@id,"pass")]")).sendKeys("Prmu");
+		 *xpath using child
+		 * driver.findElement(By.xpath("//div[@id='passContainer']/child::input")).sendKeys("Prmu");
+		 * xpath using parent
+		 * driver.findElement(By.xpath("//input[@id='pass']/parent::div")).sendKeys("Prmu");
+		 * xpath using following sibling
+		 * driver.findElement(By.xpath("(//ul[contains(@class,"uiList")])[1]//following-sibling::div[2]")).sendKeys("Prmu");
+		 * xpath using preceding sibling
+		 * driver.findElement(By.xpath("//div[@id='pageFooterChildren']//preceding-sibling::ul")).sendKeys("Prmu");
+		 * xpath using ancestor
+		 * driver.findElement(By.xpath("//div[@id='pageFooterChildren']//ancestor::ul")).sendKeys("Prmu");
+		 * xpath using text
+		 * driver.findElement(By.xpath("//button[text()='Log in']']")).click();
+		 */
 		// CSS
 		driver.findElement(By.cssSelector("button[value='1']")).click();
 		//Take screenshot indivisually
