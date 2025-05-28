@@ -55,6 +55,10 @@ public class Locatorstype {
 		 * driver.findElement(By.xpath("//div[@id='pageFooterChildren']//ancestor::ul")).sendKeys("Prmu");
 		 * xpath using text
 		 * driver.findElement(By.xpath("//button[text()='Log in']']")).click();
+   		 * xpath using normalize space git-hub signup page(https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=davemachado%2Fpublic-api)
+      		 * driver.findElement(By.xpath("//label[normalize-space(text())='Email']"));
+		 * Using AND/OR
+   		 * driver.findElement(By.xpath("//input[@id='email' or @aria-describedby='email-err']")); driver.findElement(By.xpath("//input[@id='email' and @aria-describedby='email-err']"));
 		 */
 		// CSS
 		driver.findElement(By.cssSelector("button[value='1']")).click();
